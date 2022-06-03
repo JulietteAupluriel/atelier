@@ -84,5 +84,5 @@ Route::patch('/admin/about/update/{about}', [AdminController::class, 'aboutupdat
 
 use App\Http\Controllers\MultiFileUploadController;
  
-Route::get('files-upload', [MultiFileUploadController::class, 'index']);
-Route::post('save-multiple-files', [MultiFileUploadController::class, 'store']);
+//Route::get('files-upload', [MultiFileUploadController::class, 'index']);
+//Route::post('save-multiple-files', [MultiFileUploadController::class, 'store']);

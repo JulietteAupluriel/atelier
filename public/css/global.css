@@ -16,6 +16,10 @@
     transition: all 0.8s;
 }
 
+main {
+    overflow: hidden;
+}
+
 ul,
 li {
     list-style: none;
