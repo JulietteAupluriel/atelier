@@ -56,7 +56,7 @@
         <div class="item">
              <div class="bef">
              <div class="aft">
-                <div class="contentWrapper bubbleLink" style="background: url('{{ $new->image }}') center center / cover no-repeat rgb(255, 255, 255); cursor: pointer;">
+                <div class="contentWrapper bubbleLink" style="background: url('/storage/{{ $new->image }}') center center / cover no-repeat rgb(255, 255, 255); cursor: pointer;">
                     <div class="textContent">
 						<h3>{{ $new->title }}</h3>
 						<span class="date">{{ date('d m Y',strtotime($new->date)) }}</span>
@@ -98,7 +98,7 @@
 	   <div class="item">
 				 <div class="bef"> <div class="aft">
 					<div class="contentWrapper bubbleLink" style="cursor: pointer;">
-						<img src="{{ $section->image }}" class="sectionIllu">
+						<img src="/storage/{{ $section->image }}" class="sectionIllu">
 						<div class="aboutHover"><a target="_self" href="{{ route('sections.show', $section->id)}}">{{ $section->title }}</a></div>
 					</div>
 					</div></div></div>
