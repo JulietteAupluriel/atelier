@@ -20,7 +20,7 @@ class SubsectimagesController extends Controller
         ]));
 
      
-        $photo->update(['image' => request('image')->store('photos', 'public')]);
+        $photo->update(['image' => request('image')->store('uploads', 'public')]);
         return back();
     }
 

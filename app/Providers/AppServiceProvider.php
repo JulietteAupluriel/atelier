@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Providers;
-
+use App\Models\Sections;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +23,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+
+        view()->composer('*', function ($view)
+        {
+            $sections = Sections::all();
+            $view->with('sections', $sections );
+    
+        });
+
+     
     }
 }
