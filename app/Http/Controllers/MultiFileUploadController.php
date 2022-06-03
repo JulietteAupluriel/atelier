@@ -32,10 +32,9 @@ class MultiFileUploadController extends Controller
                /* $insert[$key]['name'] = $name;
                 $insert[$key]['path'] = $path;*/
 
-                $fileName = $name.'.'.$ext;
-
+           
                 
-                $file->storeAs('public/uploads',$fileName );
+                $file->storeAs('public/uploads',$name );
 
    
  
