@@ -80,3 +80,9 @@ Route::delete('/admin/subsectimages/{photo}/destroy', [SubsectimagesController::
 
 Route::get('/admin/about', [AdminController::class, 'about'])->name('admin.about')->middleware('auth');
 Route::patch('/admin/about/update/{about}', [AdminController::class, 'aboutupdate'])->name('admin.about.update')->middleware('auth');
+
+
+use App\Http\Controllers\MultiFileUploadController;
+ 
+Route::get('files-upload', [MultiFileUploadController::class, 'index']);
+Route::post('save-multiple-files', [MultiFileUploadController::class, 'store']);
